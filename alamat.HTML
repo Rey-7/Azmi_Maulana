@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamat & Lokasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-box {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .map-btn:hover {
+            background: #004499;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lokasi & Alamat</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="pekerjaan.html">Pekerjaan</a>
+        <a href="alamat.html">Alamat</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Detail Lokasi</h2>
+        <p><strong>Datang Kerumahku Ya!:</strong> Aku Tunggu Yahh</p>
+        <p>Untuk melihat lokasi detail penunjuk arah, silakan akses tautan Google Maps resmi di bawah ini:</p>
+
+        <a href="https://maps.app.goo.gl/ELuYFJtmGKNemKGFA" target="_blank" class="btn btn-success">ini rumahku</a>
+
+        <div class="map-box">
+            <!-- Embed Google Maps Live View menggunakan kordinat yang diberikan -->
+            <iframe src="https://maps.google.com/maps?q=-6.202889,106.853208&z=15&output=embed" width="100%"
+                height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Website Pribadi. Belajar Satu.</p>
+    </footer>
+
+</body>
+
+</html>
